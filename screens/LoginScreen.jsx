@@ -19,7 +19,10 @@ const LoginScreen = ({ navigation }) => {
             headerTitleAlign: 'center',
             headerLeft: () => {
                 return (
-                    <Pressable style={styles.btnBack}>
+                    <Pressable
+                        style={styles.btnBack}
+                        onPress={() => navigation.goBack()}
+                    >
                         <MaterialIcons name="arrow-back-ios" size={20} color="white" />
                     </Pressable>
                 )
@@ -54,8 +57,8 @@ const LoginScreen = ({ navigation }) => {
                 />
                 <Pressable
                     style={styles.btnLogin(loginActive)}
-                    disabled = {loginActive}
-                    onPress={() => {}}
+                    disabled={!loginActive}
+                    onPress={() => navigation.navigate('Product')}
                 >
                     <Text style={styles.txtBtnLogin}>Login</Text>
                 </Pressable>
