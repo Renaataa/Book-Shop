@@ -17,8 +17,8 @@ const ProductScreen = () => {
             </View>
             <View style={styles.containerBookDscrp}>
                 <View style={{flexDirection: 'row'}}>
-                    <Text style={styles.titleTxt}>The subtle art of not giving a f***  </Text>
-                    <Text style={styles.categoryTxt}>  TEXT</Text>
+                    <Text style={styles.titleTxt}>The subtle art of not giving a f***</Text>
+                    <Text style={styles.categoryTxt}>TEXT</Text>
                 </View>
                 <Text style={styles.subtitleTxt}>A counterintuitive approach to living a good life</Text>
                 <Text>Autor: <Text style={styles.autorTxt}>Mark Manson</Text></Text>
@@ -185,16 +185,18 @@ const styles = StyleSheet.create({
     titleTxt: {
         paddingTop: 5,
         fontSize: 16,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
     },
     categoryTxt: {
+        textAlign: 'center',
         marginTop: 7,
         paddingBottom: 20,
         width: 45,
         height: 17,
         color: 'grey',
         backgroundColor: 'lightgrey',
-        borderRadius: 9
+        borderRadius: 9,
+        marginLeft: 10
     },
     subtitleTxt: {
         paddingVertical: 14,

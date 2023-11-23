@@ -49,7 +49,7 @@ const LoginScreen = ({ navigation }) => {
                 <TextInput
                     style={styles.txtInput}
                     onChangeText={(number) => {
-                        number.startsWith('+380') && number.length == 13 ? setLoginActive(true) : ''
+                        number.startsWith('+380') && number.length == 13 ? setLoginActive(true) : setLoginActive(false)
                     }}
                     placeholder="+380 (__) ___-__-__"
                     maxLength={13}
