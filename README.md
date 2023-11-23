@@ -1,0 +1,3 @@
+# Book-Shop
+Task to practice property position; Button with a fixed position; login page; product page.
+Phone number should contain 13 digits and be in format: +380... 
